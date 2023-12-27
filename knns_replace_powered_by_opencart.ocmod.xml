@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id><![CDATA[[OCMOD] Replace Powered By OpenCart]]></id>
+	<name><![CDATA[[OCMOD] Replace Powered By OpenCart]]></name>
+	<code>knns-replace-powered-by-opencart</code>
+	<version>0.1.0</version>
+	<author><![CDATA[<font color="#7F458C"><b>kanenas.net (aka Nikolas Branis)</b></font> - nbran@kanenas.net]]></author>
+	<link>https://kanenas.net/</link>
+	<file path="admin/language/en-gb/common/footer.php" error="log">
+		<operation error="skip">
+			<search><![CDATA['<a href="http://www.opencart.com">OpenCart</a> &copy; 2009-' . date('Y') . ' All Rights Reserved.']]></search>
+			<add position="replace"><![CDATA['powered by <a title="kanenas.net" target="_blank" href="https://kanenas.net/">kanenas.net</a>']]></add>
+		</operation>
+	</file>
+	<file path="catalog/language/en-gb/common/footer.php" error="log">
+		<operation error="skip">
+			<search><![CDATA[$_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';]]></search>
+			<add position="replace"><![CDATA[$_['text_powered']      = 'powered by <a title="kanenas.net" target="_blank" href="https://kanenas.net/">kanenas.net</a>';]]></add>
+		</operation>
+	</file>
+</modification>
