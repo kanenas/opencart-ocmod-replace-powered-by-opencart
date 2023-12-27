@@ -1,2 +1,2 @@
-# opencart-ocmod-replace-powered-by-opencart
-[OCMOD] Replace Powered By OpenCart
+# [OCMOD] Replace Powered By OpenCart
+**Opencart**: v3.x
